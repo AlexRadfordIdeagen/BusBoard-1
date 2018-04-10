@@ -12,6 +12,7 @@ namespace BusBoard.ConsoleApp
 
         public string VehicleId { get; set; }
         public DateTime ExpectedArrival { get; set; }
+        public string LineName { get; set; }
 
     }
 }

@@ -10,7 +10,7 @@ namespace BusBoard.ConsoleApp
     class StopPoint
     {
         public string CommonName { get; set; }
-        public string Distance { get; set; }
+        public int Distance { get; set; }
         public List<LineGroup> LineGroup { get; set; }
     }
     class LineGroup

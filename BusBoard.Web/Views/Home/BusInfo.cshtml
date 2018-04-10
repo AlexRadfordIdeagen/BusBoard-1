@@ -1,10 +1,13 @@
 ﻿@model BusBoard.Web.ViewModels.BusInfo
-@{
-  ViewBag.Title = "Bus Information";
-}
+<meta http-equiv="refresh" content="30">
 
-<h2>BusInfo</h2>
-
-<div class="row">
-    <p>You entered postcode @Model.PostCode</p>
-</div>
+<body>
+    <h2>Bus Information</h2>
+    <div class="row">
+        <p>Here are your results:</p>
+        @foreach(var item in Model.Info)
+        {
+            <div>@item</div>
+        }
+    </div>
+</body>
